@@ -31,6 +31,7 @@ https://raw.githubusercontent.com/IndieXiaoLong/DSH-Enhance/main/market/index.js
       "homepage": "https://github.com/IndieXiaoLong/DSH-Enhance#readme",
       "repository": { "url": "https://github.com/IndieXiaoLong/DSH-Enhance" },
       "icon": "https://raw.githubusercontent.com/IndieXiaoLong/DSH-Enhance/main/assets/icon.png",
+      "dist-tags": { "latest": "0.1.0" },
       "versions": [
         {
           "version": "0.1.0",
