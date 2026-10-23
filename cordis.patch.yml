@@ -1,0 +1,9 @@
+# dsh-enhance bundle patch
+#
+# The host half is a no-op Cordis plugin: every feature lives in the browser
+# bundle declared by `dsh.client` in package.json. This row mounts the package
+# so the Loader discovers both halves.
+
+- insert:
+    - id: dsh-enhance
+      name: 'dsh-enhance'

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img" aria-label="Message timeline demo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="0.6" stop-color="#111a33"/>
+      <stop offset="1" stop-color="#1b1233"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#818cf8"/>
+      <stop offset="0.55" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#64748b" stroke-opacity="0.10" stroke-width="1"/>
+    </pattern>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#818cf8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="360" fill="url(#bg)"/>
+  <rect width="1000" height="360" fill="url(#grid)"/>
+  <circle cx="120" cy="30" r="190" fill="#6366f1" opacity="0.10" filter="url(#soft)"/>
+  <circle cx="940" cy="340" r="170" fill="#22d3ee" opacity="0.05" filter="url(#soft)"/>
+  <g transform="translate(48 38)">
+    <rect width="42" height="42" rx="12" fill="#151b2e" stroke="#818cf8" stroke-opacity="0.6"/>
+    <path d="M21 9l3.1 9.4L33.5 21l-9.4 3.1L21 33.5l-3.1-9.4L8.5 21l9.4-3.1z" fill="url(#accent)"/>
+    <text x="58" y="19" fill="#f8fafc" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif" font-size="23" font-weight="700">📍 Message timeline</text>
+    <text x="58" y="40" fill="#94a3b8" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif" font-size="13">One node per question + answer — scan, preview, jump.</text>
+  </g>
+  <!-- chat -->
+  <g transform="translate(48 112)">
+    <rect width="620" height="204" rx="14" fill="#0f172a" stroke="#334155"/>
+    <text x="16" y="26" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700">CONVERSATION</text>
+    <rect x="18" y="42" width="70" height="8" rx="4" fill="#334155"/>
+    <rect x="18" y="58" width="240" height="24" rx="7" fill="#151b2e" stroke="#1f2937"/>
+    <rect x="30" y="67" width="170" height="7" rx="3.5" fill="#64748b"/>
+    <rect x="300" y="90" width="300" height="42" rx="9" fill="#111827" stroke="#818cf8" stroke-opacity="0.25"/>
+    <rect x="314" y="102" width="210" height="7" rx="3.5" fill="#94a3b8"/>
+    <rect x="314" y="116" width="160" height="7" rx="3.5" fill="#334155"/>
+    <rect x="18" y="146" width="260" height="24" rx="7" fill="#151b2e" stroke="#1f2937"/>
+    <rect x="30" y="155" width="190" height="7" rx="3.5" fill="#64748b"/>
+    <rect x="18" y="180" width="150" height="8" rx="4" fill="#334155"/>
+  </g>
+
+  <!-- timeline rail -->
+  <g transform="translate(730 112)">
+    <rect width="222" height="204" rx="14" fill="#0f172a" stroke="#334155"/>
+    <text x="16" y="26" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="700">TIMELINE</text>
+    <line x1="42" y1="44" x2="42" y2="176" stroke="#334155" stroke-width="2"/>
+    <circle cx="42" cy="54" r="5" fill="#22d3ee"/>
+    <circle cx="42" cy="86" r="5" fill="#151b2e" stroke="#22d3ee" stroke-width="2"/>
+    <circle cx="42" cy="118" r="7" fill="#818cf8" stroke="#f8fafc" stroke-width="2"/>
+    <circle cx="42" cy="150" r="5" fill="#151b2e" stroke="#22d3ee" stroke-width="2"/>
+    <circle cx="42" cy="176" r="5" fill="#22d3ee"/>
+
+    <rect x="60" y="96" width="146" height="54" rx="9" fill="#111827" stroke="#818cf8" stroke-opacity="0.5"/>
+    <text x="72" y="114" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600">You · Turn 3</text>
+    <text x="72" y="130" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="9">“How does the move keep…”</text>
+    <text x="72" y="143" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="8">Click to jump</text>
+  </g>
+
+  <path d="M 716 156 C 700 156 690 156 676 156" fill="none" stroke="#818cf8" stroke-width="1.6" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+</svg>

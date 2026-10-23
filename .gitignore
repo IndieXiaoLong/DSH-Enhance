@@ -1,0 +1,25 @@
+node_modules/
+.pnpm-store/
+.acl-recovery/
+.chrome-profile/
+.chrome-cdp/
+.dsh-asar/
+tools/
+*.log
+*.tgz
+*.zip
+
+# Local build and preview artifacts
+README-preview*
+lab2-topology.png
+test/*.mp4
+
+# Local AI/editor instructions
+AGENTS.md
+AGENTS.md.*
+CLAUDE.md
+GEMINI.md
+.cursorrules
+.cursor/
+.github/copilot-instructions.md
+.github/instructions/

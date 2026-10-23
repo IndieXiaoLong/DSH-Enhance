@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="dsh-enhance — DeepSeek Harness 对话增强套件">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="0.55" stop-color="#111a33"/>
+      <stop offset="1" stop-color="#1b1233"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#818cf8"/>
+      <stop offset="0.55" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.2" cy="0.2" r="0.8">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#64748b" stroke-opacity="0.12" stroke-width="1"/>
+    </pattern>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#grid)"/>
+  <circle cx="210" cy="90" r="220" fill="url(#glow)" filter="url(#soft)"/>
+  <circle cx="1080" cy="260" r="160" fill="#22d3ee" opacity="0.06" filter="url(#soft)"/>
+
+  <!-- left copy -->
+  <g transform="translate(72 78)">
+    <rect width="58" height="58" rx="16" fill="#151b2e" stroke="#818cf8" stroke-opacity="0.55"/>
+    <path d="M29 12l4.2 12.8L46 29l-12.8 4.2L29 46l-4.2-12.8L12 29l12.8-4.2z" fill="url(#accent)"/>
+    <path d="M45 12v5M42.5 14.5h5M16 45v4M14 47h4" stroke="#22d3ee" stroke-width="2" stroke-linecap="round"/>
+
+    <text x="80" y="26" fill="#e2e8f0" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="600" letter-spacing="0.5">
+      DeepSeek Harness · Web GUI Plugin
+    </text>
+    <text x="80" y="89" fill="#f8fafc" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.5">
+      dsh-enhance
+    </text>
+    <text x="80" y="131" fill="#a5b4fc" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="600">
+      对话增强套件 · The missing power-up for DSH
+    </text>
+    <text x="80" y="163" fill="#94a3b8" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif" font-size="14">
+      命名新对话 · 文件拖拽引用 · 时间线 · 悬浮球与宽度
+    </text>
+
+    <g transform="translate(80 179)" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif" font-size="12" font-weight="600">
+      <rect width="92" height="28" rx="14" fill="#1e293b" stroke="#334155"/>
+      <text x="46" y="19" text-anchor="middle" fill="#c7d2fe">Naming</text>
+      <rect x="100" width="112" height="28" rx="14" fill="#1e293b" stroke="#334155"/>
+      <text x="156" y="19" text-anchor="middle" fill="#a5f3fc">File drag</text>
+      <rect x="220" width="118" height="28" rx="14" fill="#1e293b" stroke="#334155"/>
+      <text x="279" y="19" text-anchor="middle" fill="#ddd6fe">Workspace</text>
+      <rect x="346" width="96" height="28" rx="14" fill="#1e293b" stroke="#334155"/>
+      <text x="394" y="19" text-anchor="middle" fill="#fbcfe8">Timeline</text>
+    </g>
+  </g>
+
+  <!-- right mock: sidebar + chat + timeline -->
+  <g transform="translate(742 54)">
+    <rect width="386" height="224" rx="18" fill="#0f172a" stroke="#334155" stroke-opacity="0.9"/>
+    <rect x="14" y="14" width="124" height="196" rx="12" fill="#111827" stroke="#1f2937"/>
+    <rect x="24" y="26" width="78" height="8" rx="4" fill="#334155"/>
+    <rect x="24" y="48" width="104" height="22" rx="7" fill="#1e293b" stroke="#818cf8" stroke-opacity="0.5"/>
+    <rect x="32" y="55" width="58" height="8" rx="4" fill="#a5b4fc"/>
+    <circle cx="118" cy="59" r="3" fill="#22d3ee"/>
+    <rect x="24" y="80" width="92" height="8" rx="4" fill="#334155"/>
+    <rect x="24" y="98" width="102" height="8" rx="4" fill="#334155"/>
+    <rect x="24" y="116" width="76" height="8" rx="4" fill="#334155"/>
+    <rect x="24" y="142" width="54" height="8" rx="4" fill="#475569"/>
+    <rect x="24" y="160" width="96" height="8" rx="4" fill="#334155"/>
+    <rect x="24" y="178" width="84" height="8" rx="4" fill="#334155"/>
+
+    <rect x="150" y="14" width="222" height="196" rx="12" fill="#0b1220" stroke="#1f2937"/>
+    <rect x="166" y="30" width="132" height="10" rx="5" fill="#475569"/>
+    <rect x="166" y="50" width="190" height="34" rx="9" fill="#111827" stroke="#1f2937"/>
+    <rect x="176" y="62" width="120" height="7" rx="3.5" fill="#64748b"/>
+    <rect x="306" y="62" width="38" height="7" rx="3.5" fill="#334155"/>
+    <rect x="166" y="96" width="190" height="42" rx="9" fill="#111827" stroke="#1f2937"/>
+    <rect x="176" y="108" width="150" height="7" rx="3.5" fill="#64748b"/>
+    <rect x="176" y="122" width="104" height="7" rx="3.5" fill="#475569"/>
+    <rect x="166" y="150" width="150" height="30" rx="9" fill="#151b2e" stroke="#6366f1" stroke-opacity="0.6"/>
+    <rect x="176" y="160" width="84" height="7" rx="3.5" fill="#a5b4fc"/>
+    <rect x="166" y="190" width="190" height="10" rx="5" fill="#1e293b"/>
+
+    <!-- floating ball -->
+    <circle cx="356" cy="186" r="18" fill="#151b2e" stroke="#818cf8" stroke-opacity="0.7"/>
+    <circle cx="356" cy="186" r="6" fill="url(#accent)"/>
+
+    <!-- timeline rail -->
+    <line x1="368" y1="40" x2="368" y2="150" stroke="#334155" stroke-width="2"/>
+    <circle cx="368" cy="54" r="4" fill="#22d3ee"/>
+    <circle cx="368" cy="86" r="4" fill="#1e293b" stroke="#22d3ee" stroke-width="2"/>
+    <circle cx="368" cy="118" r="4" fill="#1e293b" stroke="#22d3ee" stroke-width="2"/>
+    <circle cx="368" cy="150" r="4" fill="#22d3ee"/>
+  </g>
+</svg>
