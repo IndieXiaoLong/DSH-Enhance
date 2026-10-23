@@ -141,7 +141,13 @@ dsh plugin --profile web add dsh-enhance
 dsh plugin --profile desktop add dsh-enhance
 ```
 
-GitHub 仓库会包含 `lib/` 构建产物，可直接从仓库安装。全新克隆后若要从本地目录安装，请先运行 `pnpm build`。详见[发布说明](docs/PUBLISHING.md)。
+GitHub 仓库会包含 `lib/` 构建产物，可直接从仓库安装：
+
+```bash
+dsh plugin --profile web add github:IndieXiaoLong/DSH-Enhance
+```
+
+全新克隆后若要从本地目录安装，请先运行 `pnpm build`。详见[发布说明](docs/PUBLISHING.md)。
 
 ---
 

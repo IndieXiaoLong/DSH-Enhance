@@ -1,9 +1,6 @@
 {
   "format": 1,
-  "title": {
-    "en": "IndieXiaoLong DSH Plugins",
-    "zh": "IndieXiaoLong 的 DSH 插件"
-  },
+  "title": "IndieXiaoLong DSH Plugins",
   "plugins": [
     {
       "name": "dsh-enhance",
@@ -24,10 +21,11 @@
       "versions": [
         {
           "version": "0.1.0",
-          "publishTimestamp": 1792713600,
+          "publishTimestamp": 1792735424,
           "source": {
             "type": "git",
-            "url": "https://github.com/IndieXiaoLong/DSH-Enhance"
+            "url": "https://github.com/IndieXiaoLong/DSH-Enhance",
+            "commit": "49d6fed489813cdf783c22cdf42c7a82a0690bd6"
           },
           "engines": {
             "dsh": "^0.2.1-rc.2"

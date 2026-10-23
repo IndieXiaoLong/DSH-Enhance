@@ -34,11 +34,11 @@ https://raw.githubusercontent.com/IndieXiaoLong/DSH-Enhance/main/market/index.js
       "versions": [
         {
           "version": "0.1.0",
-          "publishTimestamp": 1760000000,
+          "publishTimestamp": 1792735424,
           "source": {
             "type": "git",
             "url": "https://github.com/IndieXiaoLong/DSH-Enhance",
-            "commit": "<published commit SHA>"
+            "commit": "49d6fed489813cdf783c22cdf42c7a82a0690bd6"
           },
           "engines": { "dsh": "^0.2.1-rc.2" }
         }
@@ -54,19 +54,22 @@ https://raw.githubusercontent.com/IndieXiaoLong/DSH-Enhance/main/market/index.js
 - 图标必须是 HTTPS、与索引同源，或不超过 32 KiB 的 `data:image/...;base64`。
 - `title`/`description` 可写成 `{ "en": "...", "zh": "..." }`，对象形式必须包含 `en`。
 
-## B. 社区 dsh-market（GitHub 主题索引）
+## B. 社区 dsh-market（awesome-dsh-plugin 目录）
 
-社区 `dsh-market` 通过 GitHub topic 自动发现插件，不需要上传 JSON。发布步骤：
+`dsh-market` 的目录来自 [`awesome-dsh-plugin`](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)，仅添加 Topic 不会自动收录。按照其[投稿指南](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md)，提交一个 PR，在 `data/plugins/IndieXiaoLong__DSH-Enhance.yml` 添加本仓库 `market/community-entry.yml` 的内容。不要修改该目录仓库的 README，它们由脚本生成。
+
+发布步骤：
 
 1. 建一个公开 GitHub 仓库并推送本目录（如果目录还没有 `.git`，先 `git init`）。
-2. 给仓库加 topics：`dsh-plugin`、`dsh-plugins`、`deepseek-harness`、`cordis`、`dsh-plugin-market`。
-3. 创建 Release / tag（例如 `v0.1.0`），必要时发布 npm 包。
-4. 仓库的 `package.json` 要能被扫描到；本仓库已包含：
+2. 给仓库加必需的 `dsh-plugin` Topic，其他相关 Topic 可选。
+3. 仓库创建至少满一天后，向 `awesome-dsh-plugin` 提交上述 PR；维护者审核并合并后，`dsh-market` 通常在一天内同步。
+4. 创建 Release / tag（例如 `v0.1.0`），可选发布 npm 包或附带预构建 tarball，提升安装体验。
+5. 仓库的 `package.json` 要能被扫描到；本仓库已包含：
    - `dsh.bundle.patch`（Host 插入行）；
    - `dsh.client`（浏览器半侧）；
    - `engines.dsh`（兼容范围，用于市场显示 `dshEngines`）；
    - `description` / `descriptionZh` / `keywords` / `README` 安装命令。
-5. 等待市场抓取；在市场里搜索 `dsh-enhance` 确认收录。
+6. 在市场里搜索 `dsh-enhance` 确认收录。
 
 ## 发布前检查清单
 

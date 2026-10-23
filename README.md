@@ -141,7 +141,13 @@ dsh plugin --profile web add dsh-enhance
 dsh plugin --profile desktop add dsh-enhance
 ```
 
-The GitHub repository includes the generated `lib/` files for direct installation. When developing from a fresh checkout, run `pnpm build` before installing the local directory. See [publishing notes](docs/PUBLISHING.md).
+The GitHub repository includes the generated `lib/` files for direct installation:
+
+```bash
+dsh plugin --profile web add github:IndieXiaoLong/DSH-Enhance
+```
+
+When developing from a fresh checkout, run `pnpm build` before installing the local directory. See [publishing notes](docs/PUBLISHING.md).
 
 ---
 
