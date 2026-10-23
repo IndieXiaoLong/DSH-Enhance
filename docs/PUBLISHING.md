@@ -63,8 +63,8 @@ https://raw.githubusercontent.com/IndieXiaoLong/DSH-Enhance/main/market/index.js
 
 1. 建一个公开 GitHub 仓库并推送本目录（如果目录还没有 `.git`，先 `git init`）。
 2. 给仓库加必需的 `dsh-plugin` Topic，其他相关 Topic 可选。
-3. 仓库创建至少满一天后，向 `awesome-dsh-plugin` 提交上述 PR；维护者审核并合并后，`dsh-market` 通常在一天内同步。
-4. 创建 Release / tag（例如 `v0.1.0`），可选发布 npm 包或附带预构建 tarball，提升安装体验。
+3. 仓库创建至少满一天后，社区 PR 的年龄检查会自动重跑；维护者审核并合并后，`dsh-market` 通常在一天内同步。当前草稿：[awesome-dsh-plugin#8863](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/8863)。
+4. 创建 Release / tag（当前已发布 `v0.1.0`，附带预构建 tarball），可选发布 npm 包。
 5. 仓库的 `package.json` 要能被扫描到；本仓库已包含：
    - `dsh.bundle.patch`（Host 插入行）；
    - `dsh.client`（浏览器半侧）；

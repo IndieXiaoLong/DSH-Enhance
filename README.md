@@ -132,20 +132,16 @@ dsh plugin --profile desktop add .
 
 For the Web profile, use `dsh plugin --profile web add .` instead. Reload the Web page or fully restart the desktop app after installing.
 
-### Install from npm or a plugin index
+### Install from GitHub or Discover
 
-After the package is published, install `dsh-enhance` in the profile you use:
-
-```bash
-dsh plugin --profile web add dsh-enhance
-dsh plugin --profile desktop add dsh-enhance
-```
-
-The GitHub repository includes the generated `lib/` files for direct installation:
+The repository includes prebuilt `lib/` files. Install it directly in the profile you use:
 
 ```bash
 dsh plugin --profile web add github:IndieXiaoLong/DSH-Enhance
+dsh plugin --profile desktop add github:IndieXiaoLong/DSH-Enhance
 ```
+
+For Discover, add [this index URL](https://raw.githubusercontent.com/IndieXiaoLong/DSH-Enhance/main/market/index.json) under **Plugins → Discover → Index sources**. The npm package has not been published yet.
 
 When developing from a fresh checkout, run `pnpm build` before installing the local directory. See [publishing notes](docs/PUBLISHING.md).
 

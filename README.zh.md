@@ -132,20 +132,16 @@ dsh plugin --profile desktop add .
 
 安装到 Web profile 时，改用 `dsh plugin --profile web add .`。安装后刷新 Web 页面；桌面端需完全退出并重启。
 
-### 从 npm 或插件索引安装
+### 从 GitHub 或 Discover 安装
 
-包发布后，可在所用 profile 中按包名安装：
-
-```bash
-dsh plugin --profile web add dsh-enhance
-dsh plugin --profile desktop add dsh-enhance
-```
-
-GitHub 仓库会包含 `lib/` 构建产物，可直接从仓库安装：
+仓库包含预构建的 `lib/` 文件，可直接安装到所用 profile：
 
 ```bash
 dsh plugin --profile web add github:IndieXiaoLong/DSH-Enhance
+dsh plugin --profile desktop add github:IndieXiaoLong/DSH-Enhance
 ```
+
+如使用 Discover，在 **插件 → Discover → 索引来源** 中添加[此索引 URL](https://raw.githubusercontent.com/IndieXiaoLong/DSH-Enhance/main/market/index.json)。npm 包目前尚未发布。
 
 全新克隆后若要从本地目录安装，请先运行 `pnpm build`。详见[发布说明](docs/PUBLISHING.md)。
 
